@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.numbers {
+    display:flex;
+    align-items: center;
+    height: 80px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.number{
+    height: 100px;
+    overflow: hidden;
+}
+
+.number-1 .number-wrap{
+    transform: translateY(100%);
+}
+
+.number-wrap{
+    display: flex;
+    flex-direction: column;
+    will-change: transform;
+}
+
+.pre-welcome .line {
+  height: 32px; /* or use line-height to match */
+  overflow: hidden;
+}
+
+.pre-welcome p {
+  transform: translateY(100%);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+.pre-welcome {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+
+.number span{
+    height: 90px;
+    line-height: 90px;
+    font-size: 72px;
+    
+}
+
+.percentage {
+    font-size: 30px;   
+    font-family: sans-serif;
+    margin-left: 4px;
+    align-self: start;
+}
+
+.number-2 .number-wrap,
+.number-3 .number-wrap {
+  height: auto; /* Let it grow based on content */
+}
+
+.number-1 .number-wrap{
+    height: 80px;
+}
+
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 12px;
+    background-color: #18181B;
+}
