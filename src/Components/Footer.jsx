@@ -8,7 +8,7 @@ function Footer() {
                 <h1 className='text-[8vw] leading-none uppercase -mb-10'>Eye-</h1>
                 <h1 className='text-[8vw] leading-none uppercase -mb-10'>Opening</h1>
             </div>
-            <img className='w-32' src="/Portfolio/At0mwebsite.png" alt="" />
+            <img className='w-32' src="/Portfolio_Pro/At0mwebsite.png" alt="" />
         </div>
         <div className='w-1/2'>
                 <h1 className='text-[8vw] leading-none uppercase -mb-10'>Animations</h1>
