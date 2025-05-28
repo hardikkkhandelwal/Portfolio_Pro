@@ -1,3 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @font-face {
+    font-family: 'Montreal';
+    src: url('/public/NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Founder';
+    src: url('/public/FoundersGrotesk-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .dark-nav {
+    background: rgba(0, 0, 0, 0.05); /* Very light transparent white */
+    backdrop-filter: blur(12px);          /* Strong blur effect */
+    -webkit-backdrop-filter: blur(12px);  /* For Safari */
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional: glass border */
+    transition: .5s
+  }
+
+  html{
+      scrollbar-width: none;
+  }
+
+
+
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
