@@ -18,7 +18,7 @@ function LandingPage() {
                 className="h-[5.8vw] mr-[1vw] rounded-md overflow-hidden relative top-[0.9vw]"
               >
                 <img
-                  src="/Portfolio_Pro/Porsche.png"
+                  src="/Portfolio_Pro/mclaren.png"
                   alt=""
                   className="w-full h-full object-cover object-center"
                 />
