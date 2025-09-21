@@ -6,6 +6,7 @@ function Featured() {
 
   const [hovering,setHovering] = useState(false)
   const [hovering2,setHovering2] = useState(false)
+  const [hovering3,setHovering3] = useState(false)
 
 
     
@@ -30,6 +31,17 @@ function Featured() {
                      {"Atom X K-Performance".split('').map((item,index)=> <motion.span initial={{y: "0%"}} animate={hovering2 ? ({y:"0%"}) : ({y: "100%"})} transition={{ease:[0.83, 0, 0.17, 1], delay: index * 0.01 }} className='inline-block text-[#CDEA68]'> {item === ' ' ? '\u00A0' : item}</motion.span>)}
                      </h1>
                     <motion.video whileHover={{scale : 0.95}} transition={{ease: Power1.easeOut}} src="/Portfolio_Pro/videos/at0mK.mp4" loop muted autoPlay className='w-full h-full object-cover rounded-xl'></motion.video>
+                </div>
+            </div>
+        </div>
+
+      <div className='cards w-full flex gap-10 mt-10'>
+            <div className='cardcontainer relative w-full flex justify-center items-center py-10'>
+                <div onMouseEnter={()=>setHovering3(true)} onMouseLeave={()=>setHovering3(false)} className='card w-full rounded-xl h-full overflow-hidden'>
+                     <h1 className='absolute overflow-hidden z-[999] text-5xl translate-x-1/2 top-1/2 -translate-y-1/2 leading-none tracking-tight whitespace-nowrap'>
+                     {"Atom X Launch Control".split('').map((item,index)=> <motion.span initial={{y: "0%"}} animate={hovering3 ? ({y:"0%"}) : ({y: "100%"})} transition={{ease:[0.83, 0, 0.17, 1], delay: index * 0.01 }} className='inline-block text-[#CDEA68]'> {item === ' ' ? '\u00A0' : item}</motion.span>)}
+                     </h1>
+                    <motion.video whileHover={{scale : 0.95}} transition={{ease: Power1.easeOut}} src="/Portfolio_Pro/videos/FordGT.mp4" loop muted autoPlay className='w-full h-full object-contain rounded-xl'></motion.video>
                 </div>
             </div>
         </div>
